@@ -1,4 +1,8 @@
-RewriteEngine On
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^([^\.]+)$ $1.php [NC,L]
-RewriteRule ^([^\.]+)$ $1.html [NC,L]
+Options -Indexes
+RewriteEngine on
+
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^ %{REQUEST_URI}.html [NC,L]
+
+ErrorDocument 403 /yoptic/main/403/Page403
+ErrorDocument 404 /yoptic/main/404/Page404
