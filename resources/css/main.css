@@ -4088,12 +4088,6 @@ textarea {
     }
 }
 
-#fp-nav.right {
-    width: 30px;
-    left: 70px;
-    margin-right: 0px;
-    position: absolute;
-}
 
 #fp-nav span, .fp-slidesNav span {
     border-color: #fff;
