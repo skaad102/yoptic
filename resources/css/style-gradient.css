@@ -3,7 +3,8 @@ a {
 }
 
 a:hover {
-    color: rgba(51, 70, 209, .8)
+    color: rgb(109, 120, 202);
+    text-decoration: none;
 }
 
 .page-header-alpha .navbar-mainmenu .nav-item a:hover {
