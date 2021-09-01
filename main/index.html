@@ -7,9 +7,9 @@
     <title>YopTic - portfolio</title>
 
 
-    <meta name="description" content="Nice and creative portfolio template. Fully responsive with cool animations">
+    <meta name="description" content="portafolio de yoptic">
     <meta name="keywords"
-        content="agency, bootstrap 4, creative, flexbox, jquery, minimalist, motion design, onepage, photography, portfolio, product, responsive, studio, video">
+        content="desarrollo web, yopal, creative, flexbox, minimalist, portfolio, product, responsive, studio, video">
 
     <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, user-scalable=0">
@@ -18,7 +18,8 @@
 
     <link rel="stylesheet" href="../resources/fonts/opensans/stylesheet.css">
     <link rel="stylesheet" href="../resources/fonts/ionicons/ionicons.min.css">
-    <link rel="stylesheet" href="../resources/fonts/fontawesome/font-awesome.min.css">
+<!--     <link rel="stylesheet" href="../resources/fonts/fontawesome/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
     <link rel="stylesheet" href="../resources/css/pageloader.css">
 
@@ -30,6 +31,8 @@
     <link rel="stylesheet" href="../resources/css/main.css">
     <link rel="stylesheet" href="../resources/css/style-gradient.css">
     <link rel="stylesheet" href="../resources/css/particulas.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css">
+    <link rel="stylesheet" href="../resources/css/slider.css">
 </head>
 
 <body id="menu" class="body-page">
@@ -55,61 +58,61 @@
         <!-- Logo -->
         <a class="navbar-brand" href="/yoptic/main/">
             <span class="logo">
-                <img src="../resources/img/logo.png" alt="logo" class="light-logo">
+                <img src="../resources/img/logo.png" alt="logo yoptic" class="light-logo">
             </span>
         </a>
 
         <div class="all-menu-wrapper" id="navbarMenu">
-
             <!-- menu Collaps -->
             <nav class="navbar-mainmenu">
                 <ul class="navbar-nav mr-auto mr-auto-my">
                     <li class="nav-item active">
-                        <a class="nav-link" href="index#inicio">Inicio
+                        <a class="nav-link" href="/yoptic/main/">Inicio
                             <span class="sr-only">(current)</span>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="item">Item</a>
+                        <!-- <a class="nav-link" href="/yoptic/main/item">Item</a> -->
+                        <a class="nav-link" href="#">Item</a>
                     </li>
                 </ul>
             </nav>
 
-            <!-- Lista izq -->
+            <!-- Lista der -->
             <nav class="navbar-sidebar ">
                 <ul class="navbar-nav" id="qmenu">
                     <li class="nav-item" data-menuanchor="inicio">
-                        <a href="main.html#inicio">
+                        <a href="/yoptic/main/#inicio">
                             <i class="icon ion-ios-home"></i>
                             <span class="txt">Inicio</span>
                         </a>
                     </li>
                     <li class="nav-item" data-menuanchor="nosotros">
-                        <a href="main.html#nosotros">
+                        <a href="/yoptic/main/#nosotros">
                             <i class="icon ion-star"></i>
                             <span class="txt">Nosotros</span>
                         </a>
                     </li>
                     <li class="nav-item" data-menuanchor="servicios">
-                        <a href="main.html#servicios">
+                        <a href="/yoptic/main/#servicios">
                             <i class="icon ion-clipboard"></i>
                             <span class="txt">Servicios</span>
                         </a>
                     </li>
                     <li class="nav-item" data-menuanchor="equipo">
-                        <a href="main.html#equipo">
+                        <a href="/yoptic/main/#equipo">
                             <i class="icon ion-ios-people"></i>
                             <span class="txt">Equipo</span>
                         </a>
                     </li>
                     <li class="nav-item" data-menuanchor="proyectos">
-                        <a href="main.html#proyectos">
+                        <a href="/yoptic/main/#proyectos">
                             <i class="icon ion-ios-briefcase"></i>
                             <span class="txt">Proyectos</span>
                         </a>
                     </li>
                     <li class="nav-item" data-menuanchor="contacto">
-                        <a href="main.html#contacto">
+                        <a href="/yoptic/main/#contacto">
                             <i class="icon ion-email"></i>
                             <span class="txt">Contacto</span>
                         </a>
@@ -123,8 +126,6 @@
 
     <!-- fondo -->
     <div class="page-cover">
-
-
 
         <div class="cover-bg-mask bg-color" data-bgcolor="rgba(2, 3, 10, 0.7)"></div>
     </div>
@@ -150,7 +151,6 @@
 
                                     <div class="title-desc">
                                         <h2 class="display-4 display-title home-title anim-1">YopTic</h2>
-                                        <h4 class="anim-2 opacity-75">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic vel quod fugiat rem impedit, alias omnis autem nihil eligendi? Porro, vel fugit. Recusandae est, ad quas assumenda tenetur rerum facere.</h4>
                                     </div>
 
                                 </div>
@@ -177,35 +177,44 @@
 
                 <div class="section-title text-center">
                     <h5 class="title-bg">Nosotros</h5>
+                    <h2 class="display-4 display-title mb-32">Nosotros</h2>
                 </div>
 
-                <div class="section-content reduced center-vh dir-col">
+                <div class="blog-slider">
+                    <div class="blog-slider__wrp swiper-wrapper">
+                        <div class="blog-slider__item swiper-slide">
+                            <div class="blog-slider__img">
 
-                    <div class="col-12 col-sm-12 center-vh">
-                        <div class="section-content anim translateUp">
-                            <div class="images text-center">
-                                <div class="img-frame-legend-alpha">
-                                    <div>
-                                        <img class="img shadow" src="../resources/img/about.jpg" alt="Image">
-                                    </div>
+                                <img src="https://res.cloudinary.com/muhammederdem/image/upload/v1535759872/kuldar-kalvik-799168-unsplash.jpg"
+                                    alt="">
+                            </div>
+                            <div class="blog-slider__content">
+                                <div class="blog-slider__title">Misión</div>
+                                <div class="blog-slider__text"><strong>YopTic</strong> tiene como propósito brindar a
+                                    sus clientes
+                                    soluciones integrales en materia de tecnología,
+                                    informática y telecomunicaciones en busca de
+                                    garantizar máximo rendimiento tecnológico para su
+                                    empresa.
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-8 col-sm-8 about-description shadow">
-                        <div class="section-content anim">
-
-                            <h4 class="text-center">Nuestra Mission</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris aliquet
-                                malesuada feugiat. Curabitur fermentum bibendum nulla, non dictum
-                                ipsum tincidunt non. Quisque convallis pharetra tempor. Donec id
-                                pretium leo. Pellentesque luctus massa non elit viverra pellentesque.
-                                Cras vitae neque molestie, rhoncus ipsum sit amet, lobortis dui.
-                                Fusce in urna sem.</p>
+                        <div class="blog-slider__item swiper-slide">
+                            <div class="blog-slider__img">
+                                <img src="https://res.cloudinary.com/muhammederdem/image/upload/v1535759871/jason-leung-798979-unsplash.jpg"
+                                    alt="">
+                            </div>
+                            <div class="blog-slider__content">
+                                <div class="blog-slider__title">Visión</div>
+                                <div class="blog-slider__text">Para el año 2025 ser la empresa líder en la Orinoquia
+                                    en innovación tecnológica, especialista en la
+                                    tecnología de la información.</div>
+                            </div>
                         </div>
-                    </div>
-                </div>
 
+                    </div>
+                    <div class="blog-slider__pagination"></div>
+                </div>
 
                 <footer class="section-footer scrolldown">
                     <a class="down">
@@ -236,8 +245,8 @@
 
                             <div class="media">
                                 <div class="media-body text-center">
-                                    <i class="icon icon ion-code-working m-auto"></i>
-                                    <h4>Development</h4>
+                                    <i class="icon fas fa-server m-auto"></i>
+                                    <h4>Mantenimiento y Soporte</h4>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris aliquet malesuada
                                         feugiat. Curabitur fermentum bibendum nulla, non dictum ipsum tincidunt non.
                                         Quisque
@@ -247,8 +256,8 @@
 
                             <div class="media">
                                 <div class="media-body text-center">
-                                    <i class="icon ion-ios-pie-outline m-auto"></i>
-                                    <h4>Marketing</h4>
+                                    <i class="icon fas fa-eye m-auto"></i>
+                                    <h4>CCTV Control del Acceso</h4>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris aliquet malesuada
                                         feugiat. Curabitur fermentum bibendum nulla, non dictum ipsum tincidunt non.
                                         Quisque
@@ -265,8 +274,8 @@
 
                             <div class="media">
                                 <div class="media-body text-center">
-                                    <i class="icon ion-paintbrush m-auto"></i>
-                                    <h4>Design</h4>
+                                    <i class="icon fas fa-network-wired m-auto"></i>
+                                    <h4>Internet - Intranet</h4>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris aliquet malesuada
                                         feugiat. Curabitur fermentum bibendum nulla, non dictum ipsum tincidunt non.
                                         Quisque
@@ -276,8 +285,8 @@
 
                             <div class="media">
                                 <div class="media-body text-center">
-                                    <i class="icon ion-android-globe m-auto"></i>
-                                    <h4>SEO</h4>
+                                    <i class="icon fas fa-code m-auto"></i>
+                                    <h4>Desarrollo de Sofware</h4>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris aliquet malesuada
                                         feugiat. Curabitur fermentum bibendum nulla, non dictum ipsum tincidunt non.
                                         Quisque
@@ -315,7 +324,7 @@
 
                     <div class="item row justify-content-between">
 
-                        <div class="col-12 col-sm-6 col-md-4 center-vh">
+                        <div class="col-12 col-sm-6 col-md-3 center-vh">
                             <div class="section-content anim translateUp">
                                 <div class="images text-center">
                                     <div class="img-avatar-alpha">
@@ -344,26 +353,26 @@
                             </div>
                         </div>
 
-                        <div class="col-12 col-sm-6 col-md-4 center-vh">
-                            <div class="section-content anim">
+                        <div class="col-12 col-sm-6 col-md-3 center-vh">
+                            <div class="section-content anim translateUp">
                                 <div class="images text-center">
                                     <div class="img-avatar-alpha">
                                         <div class="img-1 shadow">
                                             <a href="item.html">
-                                                <img class="img" src="../resources/img/team-2.jpg" alt="Image">
+                                                <img class="img" src="../resources/img/team-1.jpg" alt="Image">
                                             </a>
                                         </div>
                                         <div class="legend text-center pos-abs">
                                             <div class="pull-left text-left">
-                                                <h5>Sara Eniston</h5>
-                                                <p class="small">Designer</p>
+                                                <h5>David Miler</h5>
+                                                <p class="small">CEO / Founder</p>
                                             </div>
                                             <div class="icons pull-right text-right">
                                                 <a class="icon-btn" href="main.html#">
-                                                    <i class="icon ion-social-dribbble-outline"></i>
+                                                    <i class="icon ion-social-linkedin"></i>
                                                 </a>
                                                 <a class="icon-btn" href="main.html#">
-                                                    <i class="icon ion-social-instagram-outline"></i>
+                                                    <i class="icon ion-social-facebook"></i>
                                                 </a>
                                             </div>
                                             <div class="clearfix"></div>
@@ -373,28 +382,58 @@
                             </div>
                         </div>
 
-                        <div class="col-12 col-sm-6 col-md-4 center-vh">
-                            <div class="section-content anim translateDown">
+                        <div class="col-12 col-sm-6 col-md-3 center-vh">
+                            <div class="section-content anim translateUp">
                                 <div class="images text-center">
                                     <div class="img-avatar-alpha">
                                         <div class="img-1 shadow">
                                             <a href="item.html">
-                                                <img class="img" src="../resources/img/team-3.jpg" alt="Image">
+                                                <img class="img" src="../resources/img/team-1.jpg" alt="Image">
                                             </a>
                                         </div>
                                         <div class="legend text-center pos-abs">
                                             <div class="pull-left text-left">
-                                                <h5>James Duncan</h5>
-                                                <p class="small">Web Developer</p>
+                                                <h5>David Miler</h5>
+                                                <p class="small">CEO / Founder</p>
                                             </div>
                                             <div class="icons pull-right text-right">
                                                 <a class="icon-btn" href="main.html#">
                                                     <i class="icon ion-social-linkedin"></i>
                                                 </a>
                                                 <a class="icon-btn" href="main.html#">
-                                                    <i class="icon fa fa-twitter"></i>
+                                                    <i class="icon ion-social-facebook"></i>
                                                 </a>
                                             </div>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-6 col-md-3 center-vh">
+                            <div class="section-content anim translateUp">
+                                <div class="images text-center">
+                                    <div class="img-avatar-alpha">
+                                        <div class="img-1 shadow">
+                                            <a href="item.html">
+                                                <img class="img" src="../resources/img/team-1.jpg" alt="Image">
+                                            </a>
+                                        </div>
+                                        <div class="legend text-center pos-abs">
+                                            <div class="pull-left text-left">
+                                                <h5>David Miler</h5>
+                                                <p class="small">CEO / Founder</p>
+                                            </div>
+                                            <div class="icons pull-right text-right">
+                                                <a class="icon-btn" href="main.html#">
+                                                    <i class="icon ion-social-linkedin"></i>
+                                                </a>
+                                                <a class="icon-btn" href="main.html#">
+                                                    <i class="icon ion-social-facebook"></i>
+                                                </a>
+                                            </div>
+                                            <div class="clearfix"></div>
                                         </div>
                                     </div>
                                 </div>
@@ -530,20 +569,20 @@
                                         <div class="row">
                                             <div class="col-12 col-md-12 col-lg-4">
                                                 <h4><i class="icon ion-android-call"></i></h4>
-                                                <p>01 234 567 89</p>
+                                                <p>(+57) 311 111 1111</p>
                                             </div>
                                             <div class="col-12 col-md-12 col-lg-4">
                                                 <h4><i class="icon ion-email"></i></h4>
                                                 <p>
-                                                    <a href="../../../cdn-cgi/l/email-protection.htm"
-                                                        class="__cf_email__"
-                                                        data-cfemail="fa8a95888e95969f82ba898f8a8a95888ed4999597">[email&#160;protected]</a>
+                                                    <a href="mailto: skaad102@gmail.com" class="__cf_email__"
+                                                        data-cfemail="fa8a95888e95969f82ba898f8a8a95888ed4999597">[
+                                                        email&#160;]</a>
                                                 </p>
                                             </div>
                                             <div class="col-12 col-md-12 col-lg-4">
                                                 <h4><i class="icon ion-android-map"></i></h4>
                                                 <p>
-                                                    634 Crocker St, Los Angeles , USA
+                                                    Yopal, Casanare, Colombia
                                                 </p>
                                             </div>
                                         </div>
@@ -551,8 +590,8 @@
                                 </div>
 
                                 <div class="btns-action anim-4 mt-3">
-                                    <a class="btn btn-outline-white" href="main.html#contact/message">
-                                        <span class="txt">Send Message</span>
+                                    <a class="btn btn-outline-white" href="/yoptic/main/#contacto/message">
+                                        <span class="txt">Enviar Mensaje</span>
                                         <i class="icon fa fa-long-arrow-right ml-2"></i>
                                     </a>
                                 </div>
@@ -576,7 +615,7 @@
 
                                 <div class="title-desc">
                                     <div>
-                                        <h2 class="display-4 display-title">Write Message</h2>
+                                        <h2 class="display-4 display-title">Escríbenos</h2>
                                     </div>
                                 </div>
                             </div>
@@ -588,27 +627,30 @@
                                 <div class="">
                                     <div class="form-container form-container-card">
 
-                                        <form class="send_message_form message form" method="post" action="main.html#"
-                                            id="message_form">
+                                        <form class="send_message_form message form"
+                                            action="https://formspree.io/f/skaad102@gmail.com" method="POST"
+                                            id="message_form" autocomplete="none">
                                             <div class="form-group name">
-                                                <label for="mes-name">Name</label>
+                                                <label for="mes-name">Nombre</label>
                                                 <input id="mes-name" name="name" type="text" placeholder=""
-                                                    class="form-control-line form-success-clean" required>
+                                                    class="form-control-line form-success-clean" required
+                                                    autocomplete="off">
                                             </div>
                                             <div class="form-group email">
                                                 <label for="mes-email">Email</label>
                                                 <input id="mes-email" type="email" placeholder="" name="email"
-                                                    class="form-control-line form-success-clean" required>
+                                                    class="form-control-line form-success-clean" required
+                                                    autocomplete="off">
                                             </div>
                                             <div class="form-group no-border">
-                                                <label for="mes-text">Message</label>
+                                                <label for="mes-text">Mensaje</label>
                                                 <textarea id="mes-text" name="message"
                                                     class="form-control form-control-outline thick form-success-clean"
-                                                    required></textarea>
+                                                    required autocomplete="off"></textarea>
                                                 <div>
                                                     <p
                                                         class="message-ok invisible form-text-feedback form-success-visible">
-                                                        Your message has been sent, thank you.</p>
+                                                        Su mensaje ha sido enviado, gracias 😊😊.</p>
                                                 </div>
                                             </div>
                                             <div class="btns">
@@ -616,13 +658,13 @@
                                                     class="btn btn-outline-white btn-full email_b"
                                                     name="submit_message">
                                                     <i class="icon ion-paper-airplane mr-2"></i>
-                                                    <span class="txt">Send</span>
+                                                    <span class="txt">Enviar</span>
                                                     <span class="arrow-icon"></span>
                                                 </button>
                                                 <a class="btn btn-transparent btn-left-hover btn-border-none text-center"
-                                                    href="main.html#contact/information">
-                                                    <span class="txt"><i class="fa fa-long-arrow-left mr-2"></i> Back To
-                                                        Information</span>
+                                                    href="/yoptic/main/#contacto/">
+                                                    <span class="txt"><i class="fa fa-long-arrow-left mr-2"></i> Volver
+                                                        a Contacto</span>
                                                 </a>
                                             </div>
                                         </form>
@@ -637,6 +679,8 @@
 
         </div>
 
+
+
     </main>
 
 
@@ -644,24 +688,24 @@
 
         <div class="footer-right">
             <p class="note">Created by
-                <a href="https://themeforest.net/user/lifeinsys/portfolio">
+                <a href="/main/">
                     <span class="marked"> <strong>Me</strong></span>
                 </a>
             </p>
             <ul class="social">
                 <li>
                     <a href="main.html">
-                        <i class="icon fa fa-facebook"></i>
+                        <i class="icon fab fa-facebook-square"></i>
                     </a>
                 </li>
                 <li>
                     <a href="main.html">
-                        <i class="icon fa fa-linkedin"></i>
+                        <i class="icon fab fa-linkedin"></i>
                     </a>
                 </li>
                 <li>
-                    <a href="main.html">
-                        <i class="icon fa fa-instagram"></i>
+                    <a target="_blanck" href="https://www.instagram.com/yopticsas/">
+                        <i class="icon fab fa-instagram-square"></i>
                     </a>
                 </li>
             </ul>
@@ -669,7 +713,7 @@
     </footer>
 
 
-    <script data-cfasync="false" src="../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="../resources/js/vendor/jquery-1.12.4.min.js"></script>
 
     <script src="../resources/js/vendor/scrolloverflow.min.js"></script>
@@ -679,6 +723,10 @@
     <script src="../resources/js/form_script.js"></script>
     <script src="../resources/js/main.js"></script>
     <script src="../resources/js/particlejs/app.js"></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js"></script>
+    <script src="../resources/js/slider.js"></script>
 </body>
 
 </html>
