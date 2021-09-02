@@ -1,0 +1,89 @@
+button#submit-message i {
+    position: absolute;
+    top: 15px;
+    right: 240px;
+    height: 40px;
+    width: auto;
+    transition: transform 0.15s;
+}
+
+@media (max-width: 736px) {
+
+    button#submit-message i {
+        position: absolute;
+        top: 15px;
+        right: 180px;
+        height: 40px;
+        width: auto;
+        transition: transform 0.15s;
+    }
+}
+
+button#submit-message.clicked {
+    background-color: #cff5b3;
+    border: 2px solid #cff5b3;
+    color: #6aaa3b;
+    padding-right: 6px;
+    animation: bounce-in 0.3s;
+    cursor: default;
+}
+
+button#submit-message.clicked i {
+    animation: flyaway 1.3s linear;
+    top: -80px;
+    right: -1000px;
+}
+
+  @keyframes flyaway {
+    0% {
+      transform: rotate(10deg);
+      top: 13px;
+      right: 25px;
+      height: 30px;
+    }
+    5% {
+      transform: rotate(10deg);
+      top: 13px;
+      right: 0px;
+      height: 30px;
+    }
+    20% {
+      transform: scale(1.4);
+      transform: rotate(-20deg);
+      top: 13px;
+      right: -130px;
+      height: 45px;
+    }
+    40% {
+      width: 100px;
+      transform: rotate(10deg);
+      transform: scale(15);
+      top: -40px;
+      right: -280px;
+      opacity: 1;
+    }
+    100% {
+      width: 80px;
+      transform: rotate(60deg);
+      transform: scale(8);
+      top: -200px;
+      right: -1000px;
+      height: 0;
+      opacity: 0;
+    }
+  }
+  @keyframes bounce-in {
+    0% {
+      padding-right: 30px;
+    }
+    40% {
+      padding-right: 6px;
+    }
+    50% {
+      padding-left: 30px;
+    }
+    100% {
+      padding-left: 6px;
+    }
+  }
+  
