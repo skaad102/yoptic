@@ -180,6 +180,12 @@ body {
   font-size: 1.1rem;
 }
 
+@media (max-width : 736px){
+  .blog-slider__text{
+    padding-right: 0px;
+  }
+}
+
 .blog-slider .swiper-container-horizontal > .swiper-pagination-bullets, .blog-slider .swiper-pagination-custom, .blog-slider .swiper-pagination-fraction {
   bottom: 10px;
   left: 0;
