@@ -81,40 +81,60 @@
 
             <!-- Lista der -->
             <nav class="navbar-sidebar ">
-                <ul class="navbar-nav" id="qmenu">
+                <ul class="navbar-nav" id="qmenu" data-animation="to-left">
                     <li class="nav-item" data-menuanchor="inicio">
                         <a href="/yoptic/main/#inicio">
-                            <i class="icon ion-ios-home"></i>
+                            <span>
+                                <i aria-hidden="true" class="icon fas fa-home"></i>
+                            </span>
                             <span class="txt">Inicio</span>
                         </a>
                     </li>
                     <li class="nav-item" data-menuanchor="nosotros">
                         <a href="/yoptic/main/#nosotros">
-                            <i class="icon ion-star"></i>
+                            <span>
+                                <i aria-hidden="true" class="icon fas fa-star"></i>
+                            </span>
                             <span class="txt">Nosotros</span>
                         </a>
                     </li>
                     <li class="nav-item" data-menuanchor="servicios">
                         <a href="/yoptic/main/#servicios">
-                            <i class="icon ion-clipboard"></i>
+                            <span>
+                                <i aria-hidden="true" class="icon fas fa-clipboard-list"></i>
+                            </span>
                             <span class="txt">Servicios</span>
+                        </a>
+                    </li>
+                    <li class="nav-item" data-menuanchor="clientes">
+                        <a href="/yoptic/main/#clientes">
+                            <span>
+                                <i aria-hidden="true" class="icon fas fa-building"></i>
+                            </span>
+                            <span class="txt">Clientes</span>
                         </a>
                     </li>
                     <li class="nav-item" data-menuanchor="equipo">
                         <a href="/yoptic/main/#equipo">
-                            <i class="icon ion-ios-people"></i>
+                            <span>
+                                <i aria-hidden="true" class="icon fas fa-users"></i>
+                            </span>
                             <span class="txt">Equipo</span>
                         </a>
                     </li>
                     <li class="nav-item" data-menuanchor="proyectos">
                         <a href="/yoptic/main/#proyectos">
-                            <i class="icon ion-ios-briefcase"></i>
+                            <span>
+                                <i aria-hidden="true" class="icon fas fa-briefcase"></i>
+                            </span>
                             <span class="txt">Proyectos</span>
                         </a>
                     </li>
                     <li class="nav-item" data-menuanchor="contacto">
                         <a href="/yoptic/main/#contacto">
-                            <i class="icon ion-email"></i>
+                            <span>
+                                <i aria-hidden="true" class="icon fas fa-envelope"></i>
+                            </span>
                             <span class="txt">Contacto</span>
                         </a>
                     </li>
@@ -163,12 +183,6 @@
                 </div>
 
             </div>
-            <footer class="section-footer scrolldown">
-                <a class="down">
-                    <span class="icon"></span>
-                    <span class="txt">Nosotros</span>
-                </a>
-            </footer>
         </div>
 
 
@@ -303,11 +317,27 @@
                 <footer class="section-footer scrolldown">
                     <a class="down">
                         <span class="icon"></span>
-                        <span class="txt">Equipo</span>
+                        <span class="txt">Clientes</span>
                     </a>
                 </footer>
             </div>
 
+        </div>
+
+        <div class="section fp-auto-height-responsive" data-section="clientes">
+            <div class="section-wrapper center-vh dir-col anim">
+                <div class="section-title text-center">
+                    <h2 class="title-bg">Clientes</h2>
+                    <h2 class="display-4 display-title anim-2 mb-32">Clientes</h2>
+                </div>
+
+                <footer class="section-footer scrolldown">
+                    <a class="down">
+                        <span class="icon"></span>
+                        <span class="txt">Equipo</span>
+                    </a>
+                </footer>
+            </div>
         </div>
 
 
@@ -717,13 +747,12 @@
     </footer>
 
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="../resources/js/vendor/jquery-1.12.4.min.js"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
 
     <script src="../resources/js/vendor/scrolloverflow.min.js"></script>
     <script src="../resources/js/vendor/all.js"></script>
     <script src="../resources/js/particlejs/particles.min.js"></script>
-    <!-- <script src="http://threejs.org/examples/js/libs/stats.min.js"></script> -->
     <script src="../resources/js/form_script.js"></script>
     <script src="../resources/js/particlejs/app.js"></script>
 
